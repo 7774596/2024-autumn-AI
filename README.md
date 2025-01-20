@@ -9,11 +9,11 @@
 ## **项目参考**
 本代码主要参考了以下库实现：
 
-- 深度学习框架：torch（PyTorch）。
-- 自然语言处理：transformers（Hugging Face）。
-- 图像处理：PIL（Pillow）、albumentations。
-- 数据处理与工具：pandas、numpy、scikit-learn。
-- 进度条与日志：tqdm。
+- 深度学习框架：torch（PyTorch）
+- 自然语言处理：transformers（Hugging Face）
+- 图像处理：PIL（Pillow）、albumentations
+- 数据处理与工具：pandas、numpy、scikit-learn
+- 进度条与日志：tqdm
 - 其他工具：os、matplotlib
 ---
 
