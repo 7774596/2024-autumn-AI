@@ -26,6 +26,7 @@
 │   ├── test_without_label.txt # 测试集
 |   ├── test_predictions.txt # 生成的预测文件
 │   └── data/                # 图像和文本真实数据
+├── images/                  # 相关图片
 ├── model/                   # 模型保存目录
 │   └── best_multimodal_model.pth # 保存的最佳Multimodel模型
 ├── utils/                   # 工具函数
@@ -73,17 +74,17 @@ python train.py
 ```
 
 ### **训练参数**
-- `--data_dir`：数据目录路径（默认：`lab5-data/data`）。
-- `--train_file`：训练集文件路径（默认：`lab5-data/train.txt`）。
-- `--model_dir`：模型保存目录（默认：`model`）。
-- `--num_classes`：情感类别数量（默认：3）。
-- `--epochs`：训练轮数（默认：10）。
-- `--n_splits`：训练折数（默认：3）。
-- `--batch_size`：批大小（默认：8）。
+- `--data_dir`：数据目录路径（默认：`lab5-data/data`）
+- `--train_file`：训练集文件路径（默认：`lab5-data/train.txt`）
+- `--model_dir`：模型保存目录（默认：`model`）
+- `--num_classes`：情感类别数量（默认：3）
+- `--epochs`：训练轮数（默认：10）
+- `--n_splits`：训练折数（默认：3）
+- `--batch_size`：批大小（默认：8）
 
 ### **训练结果**
-- 训练过程中会输出每个epoch的训练损失、验证损失和验证准确率。
-- 最佳模型会保存到 `models/best_multimodal_model.pth`。
+- 训练过程中会输出每个epoch的训练损失、验证损失和验证准确率
+- 最佳模型会保存到 `models/best_multimodal_model.pth`
 
 ---
 
@@ -95,13 +96,13 @@ python predict.py
 ```
 
 ### **预测参数**
-- `--test_file`：测试集文件路径（默认：`lab5-data/test_without_label.txt`）。
-- `--data_dir`：数据目录路径（默认：`lab5-data/data`）。
-- `--model_path`：模型路径（默认：`model/best_multimodal_model.pth`）。
-- `--output_file`：预测结果保存路径（默认：`lab5-data/test_predictions.txt`）。
+- `--test_file`：测试集文件路径（默认：`lab5-data/test_without_label.txt`）
+- `--data_dir`：数据目录路径（默认：`lab5-data/data`）
+- `--model_path`：模型路径（默认：`model/best_multimodal_model.pth`）
+- `--output_file`：预测结果保存路径（默认：`lab5-data/test_predictions.txt`）
 
 ### **预测结果**
-- 预测结果会保存到 `output_file`，包含两列：`guid` 和 `tag`。
+- 预测结果会保存到 `output_file`，包含两列：`guid` 和 `tag`
 - 示例：
   ```
   guid,tag
